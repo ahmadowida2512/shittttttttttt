@@ -5,6 +5,10 @@ using UnityEngine;
 public class aaaa : MonoBehaviour
 {
     // Start is called before the first frame update
+      int Multiply(int a, int b)
+    {
+        return a * b;
+    }
     void Start()
     {
     //     int playerLives =3;
@@ -17,16 +21,29 @@ public class aaaa : MonoBehaviour
     //   }
             
     //      Debug.Log("Game Over");
-    for (int num1 = 5; num1 <=5; num1++)
-    {
-      for (int num2 = 1; num2 <= 10; num2++)
-      {int sum=num1*num2;
-        Debug.Log(num1+"*"+num2+"="+sum);
-        Debug.Log("sum:"+sum);
-      }
-    }   
+ int number=0;
+    string Summ=null;
+   
+   if (number==0) number = 5;
+   int i=1;
+        for ( ; i <= 10; i++)
+        {
+            Summ+=i+"x"+number+"="+(Sum(i,number));
+           
+    
+ Summ+=",   ";
+ Debug.Log(Sum(i,number));
+        }
+   Debug.Log(Summ);
+
+           
+          
     }
 
+ private int Sum(int num1,int num2){
+    return num1*num2;
+    
+ }
 
     // Update is called once per frame
     void Update()
