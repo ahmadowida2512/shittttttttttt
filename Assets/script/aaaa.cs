@@ -21,10 +21,10 @@ public class aaaa : MonoBehaviour
     //   }
             
     //      Debug.Log("Game Over");
- int number=0;
+ int number=5;
     string Summ=null;
    
-   if (number==0) number = 5;
+
    int i=1;
         for ( ; i <= 10; i++)
         {
